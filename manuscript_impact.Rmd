@@ -1,0 +1,94 @@
+---
+bibliography: impact.bib
+csl: styles/the-embo-journal.csl
+output:
+  word_document:
+    reference_docx: styles/Arial_11_single_space_normal_margins.docx
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+# Set up the environment
+library(knitr)
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=T, tidy=T, fig.keep='high', echo=F, dpi=100, warnings=F, message=F, comment=NA, warning=F, results='as.is', fig.width = 10, fig.height = 6, eval = FALSE) #out.width=700, 
+library(pander)
+panderOptions('table.split.table', Inf)
+set.seed(1)
+library(dplyr)
+options(stringsAsFactors = FALSE)
+```
+
+## Impact of bioinformatics software: community-driven merit-based metrics
+
+Mikhail G. Dozmorov^1\*^
+
+^1^ - Department of Biostatistics, Virginia Commonwealth University, 830 East Main Street, Richmond, Virginia, 23298, USA.
+
+^\*^ - Corresponding author, mikhail.dozmorov@vcuhealth.org
+
+Running title: Impact of bioinformatics software
+
+## Summary
+
+<!-- Modern research is increasingly data-driven and data-intensive and, thus, increasingly reliant on bioinformatics software. Publication is a common way of introducing and publicizing new software tools, but not all bioinformatics tools get published. Giving there are competing tools to perform similar tasks, it is important not merely to find the appropriate software, but have a metric for evaluating its potential usefulness. Journal's impact factors have been shown to be a poor predictor of software popularity; consequently, focusing on publications in high-impact journals and/or review articles limits user's choices in selecting practically useful bioinformatics tools. Free and open source software repositories on popular code sharing platforms such as GitHub provide another venue to follow the latest trends in bioinformatics software development. The social component of GitHub and other code sharing platforms allows users to "star," "watch," and "fork" repositories that are most useful to them. Further, inspired individuals assemble the most useful software into themed collections that may be compared with empirical reviews. We show that the community-voted measures of software popularity (GitHub statistics) are distinct from the journal's impact factor (JIF) and alternative metrics (Altmetrics) measures, and capture the level of community attention not captured by journal's citation counts. Furthermore, the useful resources are quickly noticed by the community, thus eliminating publication lag for unpublished software. We argue that GitHub statistics should complement the traditional impact metrics as an unbiased measure of the practical impact of bioinformatics software. -->
+Modern research is increasingly data-driven and reliant on bioinformatics software. Publication is a common way of introducing new software, but not all bioinformatics tools get published. Giving there are competing tools, it is important not merely to find the appropriate software, but have a metric for judging its usefulness. Journal's impact factor has been shown to be a poor predictor of software popularity; consequently, focusing on publications in high-impact journals limits user's choices in selecting useful bioinformatics tools. Free and open source software repositories on popular code sharing platforms such as GitHub provide another venue to follow the latest bioinformatics trends. The social component of GitHub allows users to "star," "watch," and "fork" repositories that are most useful to them. We show that the community-voted measures (GitHub statistics) are distinct from the journal's impact factor (JIF) and alternative metrics (Altmetrics), and capture the level of community attention not captured by journal's citation counts. We argue that GitHub statistics should complement the traditional impact metrics as an unbiased measure of the impact of bioinformatics software.
+
+### Hurdles in finding useful bioinformatics software
+
+It is currently undeniable that bioinformatics tools and databases represent a highly impactful part of modern research [@Wren:2016aa]. Many journals focus exclusively on publishing software tools and databases. Some of the most famous examples include software articles published in _PLOS Computational Biology_, _BMC Bioinformatics_, application notes published in _Bioinformatics_, database and web-server issues published by _Nucleic Acids Research_. However, given the continued growth of bioinformatics publications [@Wren:2016aa] (Appendix Figure S1), it is getting increasingly difficult to find software that will be useful in real-life applications.
+
+Although the peer-review process helps to publish high-quality bioinformatics software, it is unknown at the time of publication which tools and databases will be embraced by the scientific community and which will be forgotten [@Wren:2008aa]. In fact, a study based on text mining found that over 70% of published bioinformatics software resources are never reused [@Duck2016]. Notably, a journal's impact factor (JIF), a ratio of citations of any content published in the preceding two years over the total number of citable items, is not a good predictor of software popularity [@Wren:2016aa], making it hard to predict whether a bioinformatics tool or a database published in a high-impact journal will be useful in real-life applications.
+
+Publication lag further hinders dissemination of bioinformatics software. It often takes more than a year from the time of presubmission inquiry, potential resubmission and the peer-review period to the accepted publication. Such delays inevitably diminish the potential impact of published software. Non-peer-reviewed preprint publishing (arXiv, biorXiv, PeerJ, AsapBio) aims to eliminate publication lag. However, the number of preprints grows nearly ten times faster than the number of peer-reviewed publications [@preprint_growth:2018aa; @prepubmed:2018aa], further complicating finding useful software. 
+
+### Limitations of alternative metrics to measure the impact of bioinformatics software
+
+Several metrics have been proposed to alleviate the shortcomings of JIF in predicting software popularity, or the lack of it in preprint publishing. Article-level metrics, or Altmetrics, is currently the most widely used alternative to measure the impact of scholarly material, including preprints [@priem2010altmetrics; @shema2014blog]. In addition to academic citations, this metric aggregates mentions in social media networks, such as Twitter, online discussions and recommendations. Although in principle Altmetrics can be applied to any research output that has a digital object identifier (DOI), including datasets, code and software [@Piwowar:2013aa], its use for measuring the impact of bioinformatics software is less common. <!--Specialized metrics for software impact have been proposed, such as the now-defunct Depsy project [@Singh-Chawla:2016aa]. -->Furthermore, Altmetrics may still be biased by high impact factor (hence, greater exposure and discussion) [@adie2013gaming], and overlook the practical usability of software.
+
+### Impact bias in peer-reviewed bioinformatics review publications
+
+Reviews of bioinformatics resources can help orient a scientist in the wealth of published tools and databases. _Briefings in Bioinformatics_ is one of the journals focusing exclusively on publishing bioinformatics reviews, while others, like _Bioinformatics_, _PLoS Computational Biology_, _Genome Research_, and _Annual Reviews_ publish reviews on selected bioinformatics topics. Such reviews are typically written about bioinformatics software published in high-impact journals while leaving preprints and unpublished software largely out of scope. Furthermore, reviews may be limited by the experience of the authors, as well as by a bias to review software published in high-impact journals. Thus, while helpful in orienting a novice in the topic, reviews may overlook useful bioinformatics resources. 
+
+### Community-guided selection of bioinformatics resources
+
+<!--Currently, the majority of bioinformatics tools is being developed as free and open-source software [@perez2014developing]. -->An increasing number of bioinformaticians choose to develop their tools on popular code sharing web services, such as GitHub [@Wilson:2017aa]. Besides code-sharing services, GitHub combines a version control system [@Blischak:2016aa; @Bryant:2017aa] with features found in popular social network sites such as Facebook and Twitter [@Lima:2014aa; @Dabbish2012]. Users may try the tools and bookmark the most practically useful ones by "starring," "watching," and/or "forking" them [@Sheoran2014]. "Starring" a repository is similar to bookmarking it as a favorite, while "watching" is a more advanced feature allowing a user to receive all updates about a repository. "Forking" further advances user's involvement by creating a copy of a forked repository under the user's account, allowing him/her to offer code enhancements by creating pull requests. GitHub creates a natural ecosystem for software development where the amount of community attention to a repository is directly proportional to its popularity [@Hu2016]. We expect the number of stars, watchers, and forks ("GitHub statistics") to reflect some evidence of the practical utility of the software and suggest they should be used to inform selection of the most useful resources.
+
+### Lists of community-selected software as reviews of practical utility
+
+Although using GitHub statistics as a guide for selecting bioinformatics software is a viable approach [@Russell2018; @Hu2016], it does not alleviate the problem of finding the right resources among a large number of bioinformatics repositories [@too_many_tools:2013aa]. The abundance of GitHub repositories gave rise to field-specific collections of the most useful resources (tools, databases, papers, books, and videos), frequently referred to as "awesome" lists (Table 1, Appendix Table S1). They are assembled by inspired individuals who empirically try them and bookmarks the most valuable repositories [@Marlow2013; @Sheoran2014]. These collections of links and notes are themselves published on GitHub and starred by the community. The collections may themselves be assembled into themed "awesome" lists of lists (Appendix Table S2). Being analogous to bookmarks freely accessible on the web, they do not require any programming skills to be used. These collections may be compared with field-specific reviews peer-reviewed by the community and may be used to quickly prioritize practically useful resources.
+
+### Community attention as a distinct and universal measure or software popularity
+
+To better understand the relationship between community attention-based and traditional impact metrics, we compared GitHub statistics, JIF, Altmetrics, citation count and publication year of 50 popular bioinformatics tools published in peer-review journals and developed on GitHub (Appendix Table S3) [@bioinformatics-impact:2018aa]. Principal component analysis (PCA, Figure 1) and correlation analysis (Appendix Figure S2) showed the relatively modest correlation between JIF and Altmetrics (Pearson Correlation Coefficient, PCC = 0.49). On the contrary, GitHub statistics (counts of "stars," "watches," and "forks") were highly correlated (average PCC = 0.92). Importantly, neither JIF nor Altmetrics correlated with GitHub statistics (average PCC = -0.10/0.12, respectively), highlighting differences between community-based and traditional impact metrics. GitHub statistics and citation counts showed modest correlation (average PCC = 0.66), as would be expected for metrics driven by community attention. However, their imperfect correlation suggests that GitHub statistics capture somewhat different aspects of community attention. Interestingly, GitHub statistics negatively correlated with publication year (average PCC = -0.31), suggesting that newer, even unpublished, software meeting current bioinformatics needs quickly get noticed by the community. We suggest that GitHub statistics measuring the practical utility of software should be used as an objective addition to JIF. 
+
+<!-- +-------+ -->
+<!-- | ![](figures/Figure_impact_PCA.png)      | -->
+<!-- | **Figure 1. PCA of bioinformatics impact measures, colored by metric type.**     | -->
+<!-- +-------+ -->
+
+# Acknowledgements
+
+The author would like to thank Dr. Jonathan D. Wren and John C. Stansfield for discussions and feedback.
+
+# Conflict of interest
+
+The author declares that he has no conflict of interest.
+
+# Figures
+
+**Figure 1. PCA of bioinformatics impact measures, colored by metric type.**
+
+**Appendix Figure S1. Growth of publications having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent.
+
+**Appendix Figure S2. Correlogram of bioinformatics software impact metrics.** Each cell shows Pearson Correlation Coefficient (PCC) for the corresponding pair of metrics. Blue/Red gradient highlights low/high PCC, respectively.
+
+**Appendix Table S1. Select data science resources.** Metrics in all tables were assessed on 2018-10-05.
+
+**Appendix Table S2. Examples of lists of lists of computer science and machine learning resources.**
+
+**Appendix Table S3. Impact metrics of popular bioinformatics tools and resources.** Only software that is being developed on GitHub, has over 50 stars, and published in peer-review journals was selected.
+
+# References
+
+
