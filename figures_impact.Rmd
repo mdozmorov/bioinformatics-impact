@@ -1,0 +1,97 @@
+---
+output:
+  pdf_document: default
+---
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+# Set up the environment
+library(knitr)
+opts_chunk$set(cache.path='cache/', fig.path='img/', cache=T, tidy=T, fig.keep='high', echo=F, dpi=100, warnings=F, message=F, comment=NA, warning=F, results='as.is', fig.width = 10, fig.height = 6) #out.width=700, 
+library(pander)
+panderOptions('table.split.table', Inf)
+set.seed(1)
+library(dplyr)
+options(stringsAsFactors = FALSE)
+```
+
+```{r}
+library(MDmisc)
+library(ggplot2)
+library(ggrepel)
+library(gplots) # install.packages("gplot")
+library(RColorBrewer) # of source("http:/bioconductor.org/biocLite.R") biocLite("RColorBrewer")
+# Color scheme
+col3 <- colorRampPalette(c("blue", "white", "red"))
+
+dist.method<-"euclidean"  # "euclidean", "maximum", "manhattan", "canberra", "binary" or "minkowski"
+hclust.method<-"average" # "ward", "single", "complete", "average", "mcquitty", "median" or "centroid"
+```
+
+```{r}
+# Impact table
+fileNameOut <- "tables/Table_software_stats.csv"
+# Figures
+fileNameOut1 <- "figures/Figure_bioinformatics_paper_growth.pdf"
+fileNameOut2 <- "figures/Figure_impact_PCA.pdf"
+fileNameOut3 = "figures/Figure_correlations.pdf"
+```
+
+**Supplementary Figure 1. Growth of publications having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent.
+
+```{r}
+# Get the graph object
+p <- get_pubmed_graph("bioinformatics", yearstart = 1990, yearend = 2018, normalize = TRUE, xlab = "Year", ylab = "Proportion of bioinformatics publications\n% of total")
+plot(p) # Plot it
+ggsave(fileNameOut1, plot = p, height = 3.5, width = 5, dpi = 300) # Save
+```
+
+```{r}
+mtx_combined <- read.csv(fileNameOut)
+mtx_to_plot <- mtx_combined[, c("Stars", "Watchers", "Forks", "Year", "Altmetrics", "ImpactFactor", "Citations")]
+impact <- c(rep("GitHub stats", 3), rep("Other", 4))
+```
+
+**Figure 1. PCA of bioinformatics impact measures, colored by metric type.**
+
+```{r}
+pca <-  mtx_to_plot[complete.cases(mtx_to_plot), ]  %>% scale %>% t %>% prcomp
+# data.frame(summary(pca)$importance)[, 1:min(5, ncol(summary(pca)$importance))] %>% pander # Percent of variance explained
+
+pt <- ggplot(data = data.frame(pca$x, samples = rownames(pca$x), Impact = impact), 
+             aes(x = as.numeric(PC1), y = as.numeric(PC2), label = samples)) +
+  theme(plot.title = element_text(lineheight = 0.8, face="bold")) +
+  geom_point(aes(color = Impact), size = 3) +
+  geom_text_repel(colour = "black", size = 3) +
+  geom_hline(yintercept = 0, colour = "gray65") +
+  geom_vline(xintercept = 0, colour = "gray65") +
+  labs(color = "Impact") +
+  scale_x_continuous(name = paste0("PC1, ", round(summary(pca)$importance[2,1] * 100, digits = 2), "% variability" )) +
+  scale_y_continuous(name = paste0("PC2, ", round(summary(pca)$importance[2,2] * 100, digits = 2), "% variability" )) +
+  theme(legend.position = c(0.58, 0.85))
+plot(pt)
+
+ggsave(filename = fileNameOut2, plot = pt, height = 3.5, width = 3.5)
+```
+
+**Supplementary Figure 2. Correlogram of bioinformatics software impact metrics.** Each cell shows Pearson Correlation Coefficient (PCC) for the corresponding pair of metrics. Blue/Red gradient highlights low/high PCC, respectively.
+
+```{r}
+# Build correlogram
+mtx_cor <- cor(mtx_to_plot, method = "pearson", use = "pairwise.complete.obs")
+
+pdf(fileNameOut3)
+# par(oma=c(5,0,0,5)) #Make right and bottom margins larger
+heatmap.2(mtx_cor, distfun = function(x){dist(x, method = dist.method)}, hclustfun = function(x){hclust(x, method = hclust.method)}, 
+          col=col3(50), lwid=c(1.5, 3), lhei=c(1.5, 4), key=T,  symkey=T, keysize=0.1, density.info="none", dendrogram = "none",
+          trace="none",  cexCol=1.5, cexRow=1.5, cellnote=formatC(mtx_cor, format="g", digits=2), notecex=1.2, notecol='black')
+dev.off()
+```
+
+```{r}
+diag(mtx_cor) <- NA
+print(paste0("GitHub counts average PCC: ", formatC(mean(mtx_cor[c("Stars", "Watchers", "Forks"), c("Stars", "Watchers", "Forks")], na.rm = TRUE)), digits = 4))
+print(paste0("GitHub counts vs JIF average PCC: ", formatC(mean(mtx_cor[c("ImpactFactor"), c("Stars", "Watchers", "Forks")], na.rm = TRUE)), digits = 4))
+print(paste0("GitHub counts vs Altmetrics average PCC: ", formatC(mean(mtx_cor[c("Altmetrics"), c("Stars", "Watchers", "Forks")], na.rm = TRUE)), digits = 4))
+print(paste0("GitHub counts vs Year average PCC: ", formatC(mean(mtx_cor[c("Year"), c("Stars", "Watchers", "Forks")], na.rm = TRUE)), digits = 4))
+```
+
