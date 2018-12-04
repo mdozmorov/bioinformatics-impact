@@ -2,7 +2,16 @@
 
 Scripts to reproduce all results in the "GitHub statistics as a measure of the impact of open-source bioinformatics software" paper, accepted in Frontiers in Bioengineering and Biotechnology, section Bioinformatics and Computational Biology.
 
-- manuscript_impact.Rmd`, `tables_impact.Rmd`, `figures_impact.Rmd` - GitHub counts as impact measure manuscript, tables, and figures, respectively
+- [Manuscript](manuscript.pdf)
+- [Figure_impact_PCA.png](figures/Figure_impact_PCA.png) - **Figure 1. PCA of bioinformatics impact measures, colored by metric type.**
+- [Figure_bioinformatics_paper_growth.png](figures/Figure_bioinformatics_paper_growth.png) - **Supplementary Figure 1. Growth of publications in PubMed having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent.
+- [Figure_correlations.png](figures/Figure_correlations.png) - **Supplementary Figure 2. Correlogram of bioinformatics software impact metrics.** Each cell shows Pearson Correlation Coefficient (PCC) for the corresponding pair of metrics. Blue/Red gradient highlights low/high PCC, respectively.
+- [Supplementary Tables](supplementary_tables.pdf)
+    - **Supplementary Table 1. Select data science resources.** Metrics in all tables were assessed on 2018-11-30.
+    - **Supplementary Table 2. Examples of lists of lists of computer science and machine learning resources.**
+    - **Supplementary Table 3. Impact metrics of popular bioinformatics tools and resources.** Only software that is being developed on GitHub, has over 50 stars, and published in peer-review journals was selected.
+
+- `manuscript_impact.Rmd`, `tables_impact.Rmd`, `figures_impact.Rmd` - source files for the manuscript, tables, and figures, respectively
 
 ## Compiling
 
@@ -11,12 +20,6 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - Run `scripts/altmetrics.R` that will use `tables_altmetrics.csv` to create `Table_software_stats.csv`
 - Run `figures_impact.Rmd` that will use `Table_software_stats.csv` to create `figures/Figure_bioinformatics_paper_growth.png`, `figures/Figure_impact_PCA.png`, `figures/Figure_correlations.png`
 - `tables_impact.Rmd` will create its own tables and use `Table_software_stats.csv` to create Supplementary Table 3
-
-## `figures`
-
-- `Figure_impact_PCA.png` - **Figure 1. PCA of bioinformatics impact measures, colored by metric type.**
-- `Figure_bioinformatics_paper_growth.png` - **Supplementary Figure 1. Growth of publications in PubMed having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent.
-- `Figure_correlations.png` - **Supplementary Figure 2. Correlogram of bioinformatics software impact metrics.** Each cell shows Pearson Correlation Coefficient (PCC) for the corresponding pair of metrics. Blue/Red gradient highlights low/high PCC, respectively.
 
 ## `scripts`
 
