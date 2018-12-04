@@ -11,17 +11,21 @@ library(rcrossref)
 
 # FileNames
 # Final
-fileNameIn <- "tables/tables_altmetrics.csv"
+fileNameIn1 <- "tables/tables_altmetrics.csv"
+fileNameIn2 <- "tables/CiteScore_2017.csv"
+fileNameIn3 <- "tables/Eigenfactor_2015.csv"
 fileNameOut <- "tables/Table_software_stats.csv"
 # # First part
-# fileNameIn <- "tables/tables_altmetrics1.csv"
+# fileNameIn1 <- "tables/tables_altmetrics1.csv"
 # fileNameOut <- "tables/Table_software_stats1.csv"
 # # Second part
-# fileNameIn <- "tables/tables_altmetrics2.csv"
+# fileNameIn1 <- "tables/tables_altmetrics2.csv"
 # fileNameOut <- "tables/Table_software_stats2.csv"
 
 # Needed columns: DOI, GitHub URL
-mtx <- read.csv(fileNameIn)
+mtx <- read.csv(fileNameIn1)
+mtx_citescore <- read.csv(fileNameIn2)
+mtx_eigenfact <- read.csv(fileNameIn3)
 
 # Get Altmetrics
 alt <- rbind()
@@ -47,6 +51,9 @@ jif <- jif[, c("Journal", "ImpactFactor")] # Keep only the needed columts
 
 # Attach JIF
 mtx_combined <- left_join(as.data.frame(alt), jif, by = c('Journal' = 'Journal'))
+# Attach Citescore
+mtx_combined  <- left_join(mtx_combined, mtx_citescore, by = c("Journal" = "Title"))
+# mtx_combined  <- left_join(mtx_combined, mtx_eigenfact, by = c("Journal"))
 
 
 
@@ -61,9 +68,9 @@ mtx1 <- get_github_stats(url = url, path = path)
 # Merge altmetrics and JIF with GitHub stats
 mtx_combined <- left_join(mtx_combined, mtx1, by = c("GitHub" = "URL"))
 # Rearrange columns and save
-mtx_combined <- mtx_combined[, c("Name", "Description", "GitHub", "Stars", "Watchers", "Forks", "DOI", "Journal", "Year", "Altmetrics", "ImpactFactor", "Citations")]
+mtx_combined <- mtx_combined[, c("Name", "Description", "GitHub", "Stars", "Watchers", "Forks", "DOI", "Journal", "Year", "Altmetrics", "ImpactFactor", "CiteScore", "Citations")]
 # Make numeric columns
-mtx_combined[, c("Stars", "Watchers", "Forks", "Year", "Altmetrics", "ImpactFactor", "Citations")] <- apply(mtx_combined[, c("Stars", "Watchers", "Forks", "Year", "Altmetrics", "ImpactFactor", "Citations")], 2, as.numeric)
+mtx_combined[, c("Stars", "Watchers", "Forks", "Year", "Altmetrics", "ImpactFactor", "CiteScore", "Citations")] <- apply(mtx_combined[, c("Stars", "Watchers", "Forks", "Year", "Altmetrics", "ImpactFactor", "CiteScore", "Citations")], 2, as.numeric)
 # Save the results
 write.csv(mtx_combined[order(mtx_combined$Stars, decreasing = TRUE), ], fileNameOut, row.names = FALSE)
 
