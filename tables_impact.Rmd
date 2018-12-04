@@ -1,9 +1,9 @@
 ---
-bibliography: [/Users/mdozmorov/Documents/Work/VCU_grants/1_Dozmorov/education.bib]
-csl: /Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/styles.ref/bioinformatics.csl
+bibliography: impact.bib
+csl: /Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/styles.ref/frontiers-in-bioengineering-and-biotechnology.csl
 output:
   word_document:
-    reference_docx: /Users/mdozmorov/Documents/Work/presentations/Templates/manuscript_template/styles.doc/Arial_8_single_space_narrow_margins_landscape.docx
+    reference_docx: styles/Arial_8_single_space_narrow_margins_landscape.docx
   pdf_document: default
   html_document: default
 ---
@@ -26,7 +26,16 @@ source("scripts/utils.R")
 
 url <- "https://api.github.com"
 ```
+<!--
+**Table 1. Definition of commonly used impact metrics.**
 
+| Metric                      | Definition                                                                                                                                                                          | Reference              |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
+| Journal Impact Factor (JIF) | The average number of citations received in a calendar year by articles and reviews published in that journal in the preceding two years                                            | [@garfield2006history] |
+| CiteScore                   | The average number of citations received in a calendar year by all items published in that journal and conference proceedings in the preceding three years                          | [@da2017citescore]     |
+| Eigenfactor                 | The number of times articles from a journal published in the last five years have been cited in the JCR year while also considering which journals have contributed these citations | [@fersht2009most]      |
+| Altmetrics                  | Aggregated measure of user's attention from social media networks, online discussions etc.                                                                                          | [@priem2010altmetrics] |
+-->
 
 ### Table 1. Popular collections of bioinformatics resources, accessed on `r Sys.Date()`
 
@@ -82,3 +91,4 @@ mtx <- read.csv(fileNameOut)
 kable(mtx)
 ```
 
+## References
