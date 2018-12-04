@@ -1,0 +1,29 @@
+"Name","Description","GitHub","Stars","Watchers","Forks","DOI","Journal","Year","Altmetrics","ImpactFactor"
+"ranger","A Fast Implementation of Random Forests","https://github.com/imbs-hl/ranger",340,39,90,"10.18637/jss.v077.i01","Journal of Statistical Software","2016","46.85",22.737
+"sga","de novo sequence assembler using string graphs","https://github.com/jts/sga",183,34,73,"10.1101/gr.126953.111","Genome Research","2011","36.756",10.101
+"Basset","Convolutional neural network analysis for predicting DNA sequence activity.","https://github.com/davek44/Basset",152,22,58,"10.1101/gr.200535.115","Genome Research","2016","47.93",10.101
+"ldsc","LD Score Regression (LDSC)","https://github.com/bulik/ldsc",131,23,72,"10.1038/ng.3404","Nature Genetics","2015","53.66",27.125
+"muxViz","Analysis and Visualization of Interconnected Multilayer Networks","https://github.com/manlius/muxViz",126,20,38,"10.1093/comnet/cnu038","Journal of Complex Networks","2014","14.6",NA
+"DanQ","A hybrid convolutional and recurrent neural network for predicting the function of DNA sequences","https://github.com/uci-cbcl/DanQ",91,20,40,"10.1093/nar/gkw226","Nucleic Acids Research","2016","3.25",11.561
+"SIMLR","Implementations both in R and Matlab of SIMLR (https://www.nature.com/articles/nmeth.4207) and CIMLR (https://www.biorxiv.org/content/early/2018/02/16/267245) Multi-kernel LeaRning methods. ","https://github.com/BatzoglouLabSU/SIMLR",63,18,35,"10.1038/nmeth.4207","Nature Methods","2017","47.95",26.919
+"deconstructSigs","deconstructSigs","https://github.com/raerose01/deconstructSigs",54,10,18,"10.1186/s13059-016-0893-4","Genome Biology","2015","21.65",13.214
+"PhenoGraph","Subpopulation detection in high-dimensional single-cell data","https://github.com/jacoblevine/PhenoGraph",51,7,26,"10.1101/229799","bioRxiv","2017","13.08",NA
+"targetfinder","","https://github.com/shwhalen/targetfinder",50,10,15,"10.1038/ng.3539","Nature Genetics","2016","192.04",27.125
+"splatter","Simple simulation of single-cell RNA sequencing data","https://github.com/Oshlack/splatter",43,4,16,"10.1186/s13059-017-1305-0","Genome Biology","2017","62.446",13.214
+"Sushi","Tools for visualizing genomics data","https://github.com/dphansti/Sushi",41,12,15,"10.1093/bioinformatics/btu379","Bioinformatics","2014","78.75",5.481
+"HiCExplorer","HiCExplorer is a powerful and easy to use set of tools to process, normalize and visualize Hi-C data.","https://github.com/deeptools/HiCExplorer",40,13,20,"10.1038/s41467-017-02525-w","Nature Communications","2018","37.7",12.353
+"fgwas","Functional genomics and genome-wide association studies","https://github.com/joepickrell/fgwas",36,10,8,"10.1016/j.ajhg.2014.03.004","American Journal of Human Genetics","2014","39.25",8.855
+"slingshot","Functions for identifying and characterizing continuous developmental trajectories in single-cell data.","https://github.com/kstreet13/slingshot",34,9,4,"10.1186/s12864-018-4772-0","BMC Genomics","2018","3.7",3.73
+"chromVAR","chromatin Variability Across Regions (of the genome!)","https://github.com/GreenleafLab/chromVAR",31,16,8,"10.1038/nmeth.4401","Nature Methods","2017","59.57",26.919
+"MuSiC2","identifying mutational significance in cancer genomes","https://github.com/ding-lab/MuSiC2",26,21,16,"10.1101/gr.134635.111","Genome Research","2012","44.484",10.101
+"vast-tools","A toolset for profiling alternative splicing events in RNA-Seq data.","https://github.com/vastgroup/vast-tools",26,13,15,"10.1101/gr.220962.117","Genome Research","2017","29.35",10.101
+"hotspot3d","3D hotspot mutation proximity analysis tool ","https://github.com/ding-lab/hotspot3d",25,21,17,"10.1038/ng.3586","Nature Genetics","2016","157.308",27.125
+"bits","BITS: Binary Interval Search","https://github.com/arq5x/bits",20,8,5,"10.1093/bioinformatics/bts652","Bioinformatics","2012","9.6",5.481
+"HiCPlus","","https://github.com/zhangyan32/HiCPlus",20,2,0,"10.1038/s41467-018-03113-2","Nature Communications","2018","36.05",12.353
+"squid","SQUID detects both fusion-gene and non-fusion-gene structural variations from RNA-seq data","https://github.com/Kingsford-Group/squid",19,14,11,"10.1186/s13059-018-1421-5","Genome Biology","2018","16.9",13.214
+"LINSIGHT","","https://github.com/CshlSiepelLab/LINSIGHT",18,5,10,"10.1038/ng.3810","Nature Genetics","2017","95.178",27.125
+"BatchQC","Provides Quality Control of sequencing samples by deducing if there is batch effect and adjusts for it.","https://github.com/mani2012/BatchQC",18,5,17,"10.1093/bioinformatics/btw538","Bioinformatics","2016","30.8",5.481
+"KNIFE","Known and Novel IsoForm Explorer. Statistically based splicing detection for circular and linear isoforms","https://github.com/lindaszabo/KNIFE",18,10,10,"10.1186/s13059-015-0690-5","Genome Biology","2015","10.55",13.214
+"spp","SPP - R package for analysis of ChIP-seq and other functional sequencing data","https://github.com/hms-dbmi/spp",17,7,13,"10.1038/nbt.1508","Nature Biotechnology","2008","8",35.724
+"armatus","","https://github.com/kingsfordgroup/armatus",16,7,7,"10.1186/1748-7188-9-14","Algorithms for Molecular Biology","2014","5.7",1.536
+"hic-bench","A set of pipelines for Hi-C and ChIP-Seq analysis.","https://github.com/NYU-BFX/hic-bench",14,11,9,"10.1186/s12864-016-3387-6","BMC Genomics","2017","4.6",3.73
