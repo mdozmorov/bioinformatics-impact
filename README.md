@@ -4,7 +4,7 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 - **Manuscript**, [PDF](manuscript.pdf), [Rmd](manuscript_impact.Rmd)
 - **Figure 1 - PCA of bioinformatics impact measures, colored by metric type.** [png](figures/Figure_impact_PCA.png)
-- **Supplementary Figure 1 - Growth of publications in PubMed having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent. [png]((figures/Figure_bioinformatics_paper_growth.png))
+- **Supplementary Figure 1 - Growth of publications in PubMed having the term "bioinformatics" in their title/abstract.** Y-axis is the proportion of bioinformatics publications out of the total number of publications, in percent. [png](figures/Figure_bioinformatics_paper_growth.png)
 - **Supplementary Figure 2 - Correlogram of bioinformatics software impact metrics.** Each cell shows Pearson Correlation Coefficient (PCC) for the corresponding pair of metrics. Blue/Red gradient highlights low/high PCC, respectively. [png](figures/Figure_correlations.png)
 - **Table 1. Popular collections of bioinformatics resources.** Accessed on 2018-11-30. [Markdown](tables/table_1.md)
 - **Supplementary Tables**, [PDF](supplementary_tables.pdf)
