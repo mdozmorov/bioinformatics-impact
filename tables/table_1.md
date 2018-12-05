@@ -1,0 +1,26 @@
+**Table 1. Popular collections of bioinformatics resources.** Accessed on 2018-11-30
+
+**General bioinformatics collections**
+
+| Name                                              | Description                                                                                                                         | URL                                                                                | Stars | Watchers | Forks |
+|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|-------|----------|-------|
+| deeplearning-biology                              | A list of deep learning implementations in biology                                                                                  | https://github.com/hussius/deeplearning-biology                                    | 775   | 148      | 198   |
+| deep-review                                       | A collaboratively written review paper on deep learning genomics and precision medicine                                             | https://github.com/greenelab/deep-review                                           | 742   | 120      | 188   |
+| Awesome-Bioinformatics                            | A curated list of awesome Bioinformatics libraries and software                                                                     | https://github.com/danielecook/Awesome-Bioinformatics                              | 583   | 80       | 158   |
+| awesome                                           | Awesome resources on Bioinformatics data science machine learning programming language Python Golang R Perl and miscellaneous stuff | https://github.com/shenwei356/awesome                                              | 304   | 21       | 115   |
+| genomicspapers                                    | The Leek group guide to genomics papers                                                                                             | https://github.com/jtleek/genomicspapers                                           | 299   | 54       | 134   |
+| biotools                                          | A list of useful bioinformatics resources                                                                                           | https://github.com/jdidion/biotools                                                | 205   | 24       | 60    |
+| getting-started-with-genomics-tools-and-resources | Unix R and python tools for genomics                                                                                                | https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources | 157   | 27       | 69    |
+
+**Field-specific bioinformatics collections**
+
+| Name                             | Description                                                                                                   | URL                                                          | Stars | Watchers | Forks |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-------|----------|-------|
+| awesome-single-cell              | List of software packages for single-cell data analysis including RNA-seq ATAC-seq etc                        | https://github.com/seandavi/awesome-single-cell              | 712   | 154      | 303   |
+| RNA-seq-analysis                 | RNAseq analysis notes from Ming Tang                                                                          | https://github.com/crazyhottommy/RNA-seq-analysis            | 260   | 44       | 104   |
+| ChIP-seq-analysis                | ChIP-seq analysis notes from Ming Tang                                                                        | https://github.com/crazyhottommy/ChIP-seq-analysis           | 252   | 41       | 136   |
+| awesome-cancer-variant-databases | A community-maintained repository of cancer clinical knowledge bases and databases focused on cancer variants | https://github.com/seandavi/awesome-cancer-variant-databases | 109   | 23       | 25    |
+| awesome-10x-genomics             | List of tools and resources related to the 10x Genomics GEMCode/Chromium system                               | https://github.com/johandahlberg/awesome-10x-genomics        | 63    | 8        | 12    |
+| DNA-seq-analysis                 | DNA sequencing analysis notes from Ming Tang                                                                  | https://github.com/crazyhottommy/DNA-seq-analysis            | 53    | 7        | 34    |
+| awesome-microbes                 | List of computational resources for analyzing microbial sequencing data                                       | https://github.com/stevetsa/awesome-microbes                 | 33    | 5        | 16    |
+| DNA-methylation-analysis         | DNA methylation analysis notes from Ming Tang                                                                 | https://github.com/crazyhottommy/DNA-methylation-analysis    | 25    | 4        | 22    |

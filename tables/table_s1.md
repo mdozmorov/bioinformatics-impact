@@ -1,0 +1,12 @@
+**Supplementary Table 1. Select data science resources.** Metrics in all tables were assessed on 2018-11-30.
+
+| Name                                    | Description                                                                  | URL                                                               | Stars  | Watchers | Forks |
+|-----------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------|--------|----------|-------|
+| free-programming-books                  | books Freely available programming books                                     | https://github.com/EbookFoundation/free-programming-books         | 114409 | 8014     | 28871 |
+| every-programmer-should-know            | A collection of mostly technical things every software developer should know | https://github.com/mtdvio/every-programmer-should-know            | 35592  | 1652     | 3201  |
+| awesome-public-datasets                 | A topic-centric list of HQ open datasets in public domains New PR            | https://github.com/awesomedata/awesome-public-datasets            | 29399  | 1901     | 4882  |
+| Best-websites-a-programmer-should-visit | link Some useful websites for programmers                                    | https://github.com/sdmg15/Best-websites-a-programmer-should-visit | 23387  | 986      | 2587  |
+| awesome-docker                          | whale A curated list of Docker resources and projects                        | https://github.com/veggiemonk/awesome-docker                      | 13016  | 667      | 1493  |
+| awesome-R                               | A curated list of awesome R packages frameworks and software                 | https://github.com/qinwf/awesome-R                                | 3260   | 389      | 1105  |
+| awesome-pipeline                        | A curated list of awesome pipeline toolkits inspired by Awesome Sysadmin     | https://github.com/pditommaso/awesome-pipeline                    | 1793   | 147      | 211   |
+| awesome-rshiny                          | An awesome R-shiny list                                                      | https://github.com/grabear/awesome-rshiny                         | 207    | 27       | 48    |
