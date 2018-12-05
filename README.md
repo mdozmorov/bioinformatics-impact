@@ -14,6 +14,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 - More links to data science, bioinformatics, statistics, and machine learning resources, [https://github.com/mdozmorov/blogs](https://github.com/mdozmorov/blogs)
 
+- Open an [issue](https://github.com/mdozmorov/bioinformatics-impact/issues) to report additional resources.
+
 ## Compiling
 
 - Download `CiteScore_Metrics_2011-2017_Download_25May2018.xlsx`, CiteScore metrics, into `data` folder. Downloaded from https://www.scopus.com/sources?dgcid=RN_AG_Sourced_300000264 on 10/22/2018. Requires login, click "Download Scopus Source List", then "Download source titles and metrics".
