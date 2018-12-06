@@ -14,7 +14,7 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 - More links to data science, bioinformatics, statistics, and machine learning resources, [https://github.com/mdozmorov/blogs](https://github.com/mdozmorov/blogs)
 
-- Open an [issue](https://github.com/mdozmorov/bioinformatics-impact/issues) to report additional resources.
+- Open an [issue](https://github.com/mdozmorov/bioinformatics-impact/issues) to report additional resources. See [closed issues](https://github.com/mdozmorov/bioinformatics-impact/issues?q=is%3Aissue+is%3Aclosed) for additional resources.
 
 ## Compiling
 
