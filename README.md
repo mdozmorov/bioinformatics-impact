@@ -43,3 +43,7 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - `CiteScore_2017.csv` - CiteScore 2017 extracted with `scripts/citescore.R`
 - `tables_altmetrics.csv` - GitHub repositories selected for the analysis. `tables_altmetrics1.csv`, `tables_altmetrics2.csv` - first and second parts of the extended list of GitHub repositories. Split in parts because unregistered GitHub API allows 60 queries/hour limit.
 - `Table_software_stats.csv` - The final impact statistics table. `Table_software_stats1.csv`, `Table_software_stats2.csv` - first and second parts of the extended impact statistics table
+
+## Misc
+
+- Twitter accounts recommended to scientists working on gene regulation. https://generegulation.org/twitter-accounts-for-gene-regulation-scientists/
