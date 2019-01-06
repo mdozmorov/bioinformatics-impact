@@ -47,3 +47,5 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 ## Misc
 
 - Twitter accounts recommended to scientists working on gene regulation. https://generegulation.org/twitter-accounts-for-gene-regulation-scientists/
+
+- [Bioinformatics-Workflow-Managers-Tools-Platforms-Languages-Specifications-Standards](https://docs.google.com/spreadsheets/d/1plkAsT_S3CzSeb7ivxyjRnHyrK3JclUCXeUMf_azraY/edit#gid=0) - who is who in #Bioinformatics #Workflow managers with repo metrics.
