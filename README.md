@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- Resumes generated using the GitHub informations. Web site, http://resume.github.io/, and GitHub source code, https://github.com/resume/resume.github.com
+
 - "Top Biomedical GitHub Repos" - top 15 bioinformatics repositories (including Keras) with top citations. https://blog.semanticscholar.org/top-biomedical-github-repos-3ea15cf1930a
 
 - Twitter accounts recommended to scientists working on gene regulation. https://generegulation.org/twitter-accounts-for-gene-regulation-scientists/
