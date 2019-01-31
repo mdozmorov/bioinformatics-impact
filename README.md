@@ -59,3 +59,5 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - "Reviewer-coerced citation: Case report, update on journal policy, and suggestions for future prevention" Jonathan D Wren,  Alfonso Valencia,  Janet Kelso. _Bioinformatics_, https://doi.org/10.1093/bioinformatics/btz071. Published: 30 January 2019.
 
 - An updated ranking of institutes and countries based on developed biological databases is available at http://bigd.big.ac.cn/databasecommons/stat.
+
+- A list of predatory journals, https://predatoryjournals.com/, GitHub, https://github.com/stop-predatory-journals/stop-predatory-journals.github.io
