@@ -46,7 +46,7 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
-- Tracking the popularity and outcomes of all bioRxiv preprints. https://www.bioverlay.org/post/2019-03-tracking-the-popularity-and-outcomes-of-all-biorxiv-preprints/
+- Tracking the popularity and outcomes of all bioRxiv preprints. https://www.bioverlay.org/post/2019-03-tracking-the-popularity-and-outcomes-of-all-biorxiv-preprints/, https://rxivist.org/
 
 - Resumes generated using the GitHub informations. Web site, http://resume.github.io/, and GitHub source code, https://github.com/resume/resume.github.com
 
