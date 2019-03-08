@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- Top 1% of highly cited researchers in 2018, https://hcr.clarivate.com/#
+
 - Journal impact factor correlates with the number of their followers on Twitter, https://twitter.com/generegulation/status/1101537375962976262?s=03
 
 - Tracking the popularity and outcomes of all bioRxiv preprints. https://www.bioverlay.org/post/2019-03-tracking-the-popularity-and-outcomes-of-all-biorxiv-preprints/, https://rxivist.org/
