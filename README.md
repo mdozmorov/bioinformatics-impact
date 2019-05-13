@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- Meta-Research: Tracking the popularity and outcomes of all bioRxiv preprints, https://elifesciences.org/articles/45133
+
 - Top 1% of highly cited researchers in 2018, https://hcr.clarivate.com/#
 
 - Journal impact factor correlates with the number of their followers on Twitter, https://twitter.com/generegulation/status/1101537375962976262?s=03
