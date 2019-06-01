@@ -71,3 +71,5 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - An updated ranking of institutes and countries based on developed biological databases is available at http://bigd.big.ac.cn/databasecommons/stat.
 
 - A list of predatory journals, https://predatoryjournals.com/, GitHub, https://github.com/stop-predatory-journals/stop-predatory-journals.github.io
+
+- `statcheck` - An R package and a web tool to extract statistics from articles and recompute p-values. http://statcheck.io/, https://cran.r-project.org/web/packages/statcheck/index.html, https://mbnuijten.com/statcheck/
