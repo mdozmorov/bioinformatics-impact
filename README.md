@@ -73,3 +73,5 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - A list of predatory journals, https://predatoryjournals.com/, GitHub, https://github.com/stop-predatory-journals/stop-predatory-journals.github.io
 
 - `statcheck` - An R package and a web tool to extract statistics from articles and recompute p-values. http://statcheck.io/, https://cran.r-project.org/web/packages/statcheck/index.html, https://mbnuijten.com/statcheck/
+
+- Introducing eLife’s first computationally reproducible article. https://elifesciences.org/labs/ad58f08d/introducing-elife-s-first-computationally-reproducible-article
