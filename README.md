@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- A list of R developers and advocates on Github. https://github.com/amrrs/awesome_R_Githubers
+
 - Meta-Research: Tracking the popularity and outcomes of all bioRxiv preprints, https://elifesciences.org/articles/45133
 
 - Top 1% of highly cited researchers in 2018, https://hcr.clarivate.com/#
