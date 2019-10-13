@@ -46,6 +46,9 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- `fCite` - fractional citation tool, better metric to quantify scientific output, an aggregate of several metrics (FLAE, FLAE2, FLAE3, EC). http://www.fcite.org/
+    - Kozlowski, Lukasz Pawel. “FCite: A Fractional Citation Tool to Quantify an Individual’s Scientific Research Output.” Preprint. Scientific Communication and Education, September 21, 2019. https://doi.org/10.1101/771485.
+
 - A list of R developers and advocates on Github. https://github.com/amrrs/awesome_R_Githubers
 
 - Meta-Research: Tracking the popularity and outcomes of all bioRxiv preprints, https://elifesciences.org/articles/45133
