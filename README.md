@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- [GitMemory](https://gitmemory.com) - history of github activity of individual users and repositories [Github User Rank List](https://gitmemory.com/rank)
+
 - The missing star history graph of github repos https://star-history.t9t.io, https://github.com/timqian/star-history
 
 - `fCite` - fractional citation tool, better metric to quantify scientific output, an aggregate of several metrics (FLAE, FLAE2, FLAE3, EC). http://www.fcite.org/
