@@ -46,6 +46,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Misc
 
+- [GitDiscoverer](https://rajkstats.shinyapps.io/git_discoverer_app/) - An app to discover trending repositories, trending developers and popular projects in ML/DL on Github. [RStudio announcement](https://community.rstudio.com/t/re-work-of-gitdiscoverer-2020-shiny-contest-submission/58325)
+
 - [GitMemory](https://gitmemory.com) - history of github activity of individual users and repositories [Github User Rank List](https://gitmemory.com/rank)
 
 - The missing star history graph of github repos https://star-history.t9t.io, https://github.com/timqian/star-history
