@@ -8,6 +8,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 - [projmgr](https://emilyriederer.github.io/projmgr/index.html) aims to better integrate project management into your workflow and free up time for more exciting tasks like R coding and data analysis. Since many R users and programmers use GitHub as a home for their analysis, the goal of projmgr is to streamline project management with these same tools.
 
+- [jdtrat/ghee](https://github.com/jdtrat/ghee) - Provides a lightweight interface for Github through R
+
 - [GitDiscoverer](https://rajkstats.shinyapps.io/git_discoverer_app/) - An app to discover trending repositories, trending developers and popular projects in ML/DL on Github. [RStudio announcement](https://community.rstudio.com/t/re-work-of-gitdiscoverer-2020-shiny-contest-submission/58325)
 
 - [GitMemory](https://gitmemory.com) - history of github activity of individual users and repositories [Github User Rank List](https://gitmemory.com/rank)
