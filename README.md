@@ -10,6 +10,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 - [jdtrat/ghee](https://github.com/jdtrat/ghee) - Provides a lightweight interface for Github through R
 
+- [metrumresearchgroup/ghpm](https://github.com/metrumresearchgroup/ghpm) is a library written in R that grabs and parses data from a github repository making it easier for users to perform analytics. Using Github's flexible GraphQL API and R's dataframe structure, ghpm returns repository data about issues, milestones, project boards, and pull requests which can be melded together to identify useful analytical information.
+
 - [GitDiscoverer](https://rajkstats.shinyapps.io/git_discoverer_app/) - An app to discover trending repositories, trending developers and popular projects in ML/DL on Github. [RStudio announcement](https://community.rstudio.com/t/re-work-of-gitdiscoverer-2020-shiny-contest-submission/58325)
 
 - [GitMemory](https://gitmemory.com) - history of github activity of individual users and repositories [Github User Rank List](https://gitmemory.com/rank)
