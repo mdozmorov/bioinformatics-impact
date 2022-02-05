@@ -4,6 +4,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 
 ## Links
 
+- [star-history](https://github.com/bytebase/star-history) - The missing star history graph of GitHub repos - https://star-history.com
+
 - [Rxivist, bioinformatics authors](https://rxivist.org/?category=bioinformatics&view=standard&entity=authors) - most cited authors in bioinformatics
 
 - [projmgr](https://emilyriederer.github.io/projmgr/index.html) aims to better integrate project management into your workflow and free up time for more exciting tasks like R coding and data analysis. Since many R users and programmers use GitHub as a home for their analysis, the goal of projmgr is to streamline project management with these same tools.
