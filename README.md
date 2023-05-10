@@ -23,6 +23,8 @@ Scripts to reproduce all results in the "GitHub statistics as a measure of the i
 - `fCite` - fractional citation tool, better metric to quantify scientific output, an aggregate of several metrics (FLAE, FLAE2, FLAE3, EC). http://www.fcite.org/
     - Kozlowski, Lukasz Pawel. “FCite: A Fractional Citation Tool to Quantify an Individual’s Scientific Research Output.” Preprint. Scientific Communication and Education, September 21, 2019. https://doi.org/10.1101/771485.
 
+- Gardner, Paul P., James M. Paterson, Stephanie McGimpsey, Fatemeh Ashari-Ghomi, Sinan U. Umu, Aleksandra Pawlik, Alex Gavryushkin, and Michael A. Black. “Sustained Software Development, Not Number of Citations or Journal Choice, Is Indicative of Accurate Bioinformatic Software.” Preprint. Bioinformatics, December 7, 2016. https://doi.org/10.1101/092205. https://github.com/Gardner-BinfLab/speed-vs-accuracy-meta-analysis, https://figshare.com/articles/dataset/Sustained_software_development_not_number_of_citations_or_journal_choice_is_indicative_of_accurate_bioinformatic_software_--_PubMed_XML_files/15121818/2
+
 - A list of R developers and advocates on Github. https://github.com/amrrs/awesome_R_Githubers
 
 - Meta-Research: Tracking the popularity and outcomes of all bioRxiv preprints, https://elifesciences.org/articles/45133
